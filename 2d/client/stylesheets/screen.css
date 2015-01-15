@@ -1,0 +1,228 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../sass/_base.scss */
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 9, ../sass/_base.scss */
+html, body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 13, ../sass/_base.scss */
+body {
+  padding: 40px;
+  background-color: #D7D7D7;
+}
+/* line 17, ../sass/_base.scss */
+body:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  z-index: 2;
+  pointer-events: none;
+  /* "all" disables mouse access to image */
+  /* IE10 Consumer Preview */
+  /* Mozilla Firefox */
+  /* Opera */
+  /* Webkit (Safari/Chrome 10) */
+  /* Webkit (Chrome 11+) */
+  /* W3C Markup, IE10 Release Preview */
+  background: rgba(175, 7, 85, 0);
+  /* Old Browsers */
+  background: -moz-radial-gradient(center, ellipse cover, rgba(175, 7, 85, 0) 0%, rgba(166, 0, 89, 0) 0%, rgba(166, 0, 89, 0) 42%, #b6b6b6 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(175, 7, 85, 0)), color-stop(0%, rgba(166, 0, 89, 0)), color-stop(42%, rgba(166, 0, 89, 0)), color-stop(100%, #b6b6b6));
+  /* Chrome, Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(175, 7, 85, 0) 0%, rgba(166, 0, 89, 0) 0%, rgba(166, 0, 89, 0) 42%, #b6b6b6 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, rgba(175, 7, 85, 0) 0%, rgba(166, 0, 89, 0) 0%, rgba(166, 0, 89, 0) 42%, #b6b6b6 100%);
+  /* Opera 11.10+ */
+  background: -ms-radial-gradient(center, ellipse cover, rgba(175, 7, 85, 0) 0%, rgba(166, 0, 89, 0) 0%, rgba(166, 0, 89, 0) 42%, #b6b6b6 100%);
+  /* IE 10+ */
+  background: radial-gradient(ellipse at center, rgba(175, 7, 85, 0) 0%, rgba(166, 0, 89, 0) 0%, rgba(166, 0, 89, 0) 42%, #b6b6b6 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#af0755', endColorstr='#a60059', GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+
+/* line 58, ../sass/_base.scss */
+.print {
+  font-size: 40px;
+  z-index: 9999999999999;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  max-width: 200px;
+  max-height: 200px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 197px;
+  color: white;
+  left: 50%;
+  top: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+}
+/* line 78, ../sass/_base.scss */
+.print img {
+  position: absolute;
+  width: auto;
+  height: 90%;
+  left: 29px;
+  top: 14px;
+}
+/* line 86, ../sass/_base.scss */
+.print span {
+  color: white;
+  display: inline-block;
+  position: absolute;
+  height: 58px;
+  width: 100px;
+  line-height: 65px;
+  left: 50%;
+  top: 50%;
+  margin-left: -51px;
+  margin-top: -31px;
+}
+
+/* line 100, ../sass/_base.scss */
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  height: 40px;
+  background-color: transparent;
+  right: 0;
+  z-index: 999;
+  line-height: 40px;
+  padding-left: 40px;
+  color: #ffffff;
+  font-weight: bold;
+}
+/* line 113, ../sass/_base.scss */
+footer .right {
+  position: absolute;
+  right: 40px;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #636363;
+}
+/* line 122, ../sass/_base.scss */
+footer .center {
+  position: absolute;
+  left: 50%;
+  margin-left: -91px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: #fff;
+}
+
+/* line 134, ../sass/_base.scss */
+.header {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 999;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  font-size: 14px;
+  right: 40px;
+  text-align: left;
+}
+/* line 146, ../sass/_base.scss */
+.header svg {
+  width: 33px;
+  height: 26px;
+}
+/* line 151, ../sass/_base.scss */
+.header .arduino {
+  right: 0;
+  position: absolute;
+  font-size: 10px;
+  top: 0;
+  font-weight: normal;
+}

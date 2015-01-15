@@ -1,0 +1,21 @@
+{
+  "name": "nodejs + arduino + Pulse Sensor",
+  "version": "0.0.1",
+  "description": "Beats Per Minute",
+  "main": "server.js",
+  "dependencies": {
+    "serialport": "1.2.5",
+    "socket.io": "^0.9.16"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zulfeekar/nodejs-arduino-pulse-sensor.git"
+  },
+  "author": "Zulfeekar Cheriyampurath",
+  "license": ""
+}
